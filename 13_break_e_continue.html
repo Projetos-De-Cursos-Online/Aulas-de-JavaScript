@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Break e Continue</title>
+	</head>
+	<body>
+		<script language="javascript" type="text/javascript">
+			//Operação de controle de rotina break
+			for(var num = 1;num <= 1000; ++num){
+				document.write(num + " ");
+				if(num == 20){	
+					break;
+				}
+			}
+			document.write("<br><br>");
+			//Operação para a brincadeira do pin
+			for(var nr=1;nr<=20;++nr){
+				if(nr%3==0){
+					document.write("<div style='color:red'>pin</div>");
+					//Ignora os códigos abaixo e continua o laço.
+					continue;
+				}
+				document.write(nr);
+				document.write("<br>");
+			}
+		</script>
+	</body>
+</html>

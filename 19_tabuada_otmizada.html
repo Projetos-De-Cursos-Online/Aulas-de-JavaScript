@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Tabuada Estilizada</title>
+		<style>
+			td{
+				width:30px;
+				height:30px;
+				border-radius:15px;
+				background:white;
+			}
+		</style>
+	</head>
+	<body>
+		<script language="javascript" type="text/javascript">
+			//cria variável numero da tabuada
+			var tabuada =  prompt("Qual número vai ser a tabuada?:", 12);
+			var texto = tabuada;
+			//tabuada = parseInt(tabuada);
+			tabuada = parseFloat(tabuada);
+			if(!isNaN(tabuada)){
+				document.write("<h2 style='text-align:center;'>Esta é a tabuada do " + tabuada + " feita com JavaScript</h2>");
+				document.write("<center>");
+				document.write("<table border = '2' style='background-color:orange; text-align:center; width:200px' >");
+				document.write("<tr>")
+				document.write("<td colspan=5>Tabuada</td>")
+				document.write("</tr>")
+				for(var num = 1; num <= 10; ++num){
+					//document.write(tabuada + " X " + num + " = " + num * tabuada + "<br><hr>");
+					document.write("<tr>");
+					document.write("<td>" + tabuada + "</td>");
+					document.write("<td>x</td>");
+					document.write("<td>" + num + "</td>");
+					document.write("<td>=</td>");
+					document.write("<td>" + tabuada * num + "</td>");
+					document.write("</tr>");
+				}
+				document.write("</table>");
+			}
+			else
+			{
+				if(texto==null || texto==""){
+					document.write("Não é permitido cancelar ou Nulo.");
+				}
+				else
+				{
+					document.write("Não é permitido: " + texto + ".");
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Interação Confirm</title>
+	</head>
+	<body>
+		<script language="javascript" type="text/javascript">
+			//Interação com o usuário com confirm
+			var msg="Clique em um botão!\n presione Ok ou Cancelar.\n Desculpe pelo transtorno.";
+			var decisao = confirm(msg);
+			if(decisao){
+				alert("Você\n\n clicou no botão OK,\n porque foi retornado o valor: " + decisao);
+				
+			}		
+			else{
+				alert("Você clicou\n no botão CANCELAR, porque foi retornado o valor: " + decisao);
+			}
+		</script>
+		
+	</body>
+</html>

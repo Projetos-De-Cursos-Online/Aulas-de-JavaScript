@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Switch Case</title>
+	</head>
+	<body>
+		<script language="javascript" type="text/javascript">
+			//Seleciona o nome do mês de acordo com mês do computador
+			
+			var hoje = new Date();
+			var mes = hoje.getMonth() + 1;
+			document.write("Hoje: " + hoje + "<br><hr>");
+			document.write("Estamos no mês de: ");
+			switch(mes){
+				case 1:
+				document.write("janeiro");
+				break;
+				case 2:
+				document.write("Fevereiro");
+				break
+				;case 3:
+				document.write("<p style='color:red;'>Março<p>");
+				document.write(hoje.getDate());
+				break;
+				case 4:
+				document.write("Abril");
+				break;
+				case 5:
+				document.write("Maio");
+				break;
+				case 6:
+				document.write("junho");
+				break;
+				case 7:
+				document.write("julho");
+				break;
+				case 8:
+				document.write("Agosto");
+				break;
+				case 9:
+				document.write("Setembro");
+				break;
+				case 10:
+				document.write("Outubro");
+				break;
+				case 11:
+				document.write("Novembro");
+				break;
+				case 12:
+				document.write("Dezembro");
+				break;
+				default:
+				//Se não for nenhum dos cases acima, então:
+				document.write("Ops! mês não encontrado!");
+				
+			}
+		</script>
+		
+	</body>
+</html>

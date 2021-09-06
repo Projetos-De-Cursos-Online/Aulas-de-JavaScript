@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Array dos meses do ano</title>
+		<style>
+			p{color: green;}
+		</style>
+		
+	</head>
+	<body>
+		<script language="javascript" type="text/javascript">
+			//A linha abaixo pega a data do computador
+			var data = new Date();
+			//A linha abaixo separa o dia da semana que está na variável diaSemana
+			var diaSemana = data.getDay();
+			//A linha a seguir cria um vetor contendo os dias da semana
+			var dias = new Array("Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado");
+			//A linha abaixo escreve o resultado do dia da semana no vetor
+			var texto;
+			texto="Índice Array...: " + diaSemana + "<br><hr> Num. do dia da semana...: " + (diaSemana + 1) + "<br><hr> Hoje é...: " + dias[diaSemana];
+			
+			document.write("<p>" + texto + "</p>");
+		</script>
+		
+	</body>
+</html>

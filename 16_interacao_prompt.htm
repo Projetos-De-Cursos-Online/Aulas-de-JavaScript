@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Intera~~ao Prompt</title>
+	</head>
+	<body>
+		<script language="javascript" type="text/javascript">
+			//Interação com o usuário com prompt
+			var nome;
+			var num=0;
+			do{
+				if(num==0){
+					nome=prompt("Qual é o seu nome?");
+				}
+				else{
+					nome=prompt("Por favor, preciso do seu nome.");
+				}
+				++num;	
+				if (num >= 3){
+				alert("Que pena! Espera saber seu nome.")
+					break;
+					
+				}	
+			}while(nome=="")
+			if(nome!="" && nome != null){
+				alert("Seu nome é " + nome);
+			}
+		</script>
+		
+	</body>
+</html>

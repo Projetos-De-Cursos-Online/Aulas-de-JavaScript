@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>FUNCTION com JavaScript</title>
+		<script language="javascript" type="text/javascript">
+			function redHotmail(){
+				var escolha;
+				escolha = confirm("Deseja acessar o login do Hotmail?");
+				if(escolha){
+					window.location="https://login.live.com/";
+				}
+			}
+			function redGmail(){
+				var escolha;
+				escolha = confirm("Deseja acessar o login do Gmail?");
+				if(escolha){
+					window.location="https://accounts.google.com/";
+				}
+			}
+		</script>
+		<style>
+			a, button{
+			background:lightblue;
+			text-decoration:none;
+		}
+		</style>
+	</head>
+	<body>
+		<fieldset>
+			<legend>Link via JavaScript</legend>
+			<button ><a href="#" onclick="redHotmail()">Acessar o login do Hotmail</a></button>
+			<button style="background:lightblue"><a href="#" onclick="redGmail()">Acessar o login do Gmail</a></button>
+		</fieldset>
+
+		<!--<a href="https://login.live.com/">Acessar o login do Hotmail</a>-->
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+<meta charset = "utf-8">
+<title>Calculadora com JavaScript</title>
+<script type = "text/javascript" src = "scripts/my_script.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<center>
+	<h3>Calculadora muito simples!!!</h1>
+	<form class = "formato" name = "calc">
+		<input class="display" type="text" name="visor" disabled>
+		<br>
+		<input type="button" value="7" onclick="botao(this.value);">
+		<input type="button" value="8" onclick="botao(this.value);">
+		<input type="button" value="9" onclick="botao(this.value);">
+		<input type="button" value="/"  onclick="botao(this.value);">
+		<br>
+		<input type="button" value="4" onclick="botao(this.value);">
+		<input type="button" value="5" onclick="botao(this.value);">
+		<input type="button" value="6" onclick="botao(this.value);">
+		<input type="button" value="*" onclick="botao(this.value);">
+		<br>
+		<input type="button" value="1" onclick="botao(this.value);">
+		<input type="button" value="2" onclick="botao(this.value);">
+		<input type="button" value="3" onclick="botao(this.value);">
+		<input type="button" value="-" onclick="botao(this.value);">
+		<br>
+		<input type="button" value="0" onclick="botao(this.value);">
+		<input type="button" value="=" onclick="calculo();">
+		<input type="button" value="C" onclick="limpar();">
+		<input type="button" value="+" onclick="botao(this.value);">
+	
+	</form>
+	<h6 id = "autor">Feito por: Luiz Amaro</h6>
+</center>
+</body>
+
+</html>
